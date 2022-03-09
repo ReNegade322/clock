@@ -4,11 +4,6 @@ window.onload = function() {
       let seconds = new Date().getSeconds();
       document.getElementById("seconds").innerHTML = (seconds < 10 ? '0' : '') + seconds;
   
-    //   let colors = document.getElementById("seconds").innerHTML;
-    //   for colors = ()  {
-    //       document.body.style.backgroundColor = (red);
-    //   }
-
     let colors = ['Crimson','pink','coral','orange','CornflowerBlue','DarkViolet'];
     (function changeColor(){
       document.body.style.backgroundColor = colors[seconds++%colors.length];
